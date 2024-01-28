@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=DM+Serif+Display:ital@0;1&family=Rubik+Mono+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #D1CAA1;
+    overflow-x: hidden;
+}
+nav{
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    height: 4vh;
+    width: 100vw;
+    background-color: #606C38;
+    max-width: 100%;
+}
+/*logo*/
+nav img{
+    float: left;
+    position: relative;
+    transform: translate(15vh, -1.2vh);
+    height: 15vh;
+    border: 1px solid black;
+}
+/*links*/
+.links{
+    display: inline-block;
+}
+
+nav .links a{
+    font-size: 1.2em;
+    font-family: "DM Serif Display", serif;
+    padding: 1.2vh;
+    padding-right: 2vw;
+    float: left;
+    text-decoration: none;
+    color: #3C5A14;
+}
+/*dropdown menu*/
+.links{
+    float: right;
+}
+#dropdwn1, #dropdwn2, #dropdwn3 {
+    overflow: hidden;
+}
+
+.dropbtn1, .dropbtn2, .dropbtn3{ 
+    transform: translate(0, -1.8vh);
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    height: 5vh;
+    background-color: inherit;
+}
+
+nav .dropbtn1 a,nav .dropbtn2 a,nav .dropbtn3 a{ 
+    color: #fefae0;
+    font-family: "DM Serif Display", serif;
+}
+.drop-content1, .drop-content2, .drop-content3 {
+    font-family: "DM Serif Display", serif;
+    display: none;
+    position: absolute;
+    width: 15vw;
+    background-color: #fefae0;
+    box-shadow: 6px 7px 12px -8px rgba(0, 0, 0, 0.395);
+}
+
+.drop-content1 p{
+    padding: 1vh;
+    font-size: 1.5em;
+    color: #3C5A14;
+    font-family: "DM Serif Display", serif;
+}
+.drop-content1 a, .drop-content2 a, .drop-content3 a {
+    float: none;
+    color: #3C5A14;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.drop-content1 a:hover {
+    background-color: #3C5A14;
+    color: #fefae0;
+    width: 83%;
+}
+
+#dropdwn1:hover .dropbtn1 a{
+    height: 4.76vh;
+    width: 5vw;
+    background-color: #fefae0;
+    color: #3C5A14;
+}
+#dropdwn1:hover .drop-content1 {
+    display: block;
+    transform: translate(0, -2.38vh);
+}
+
+.drop-content2 a:hover {
+    background-color: #3C5A14;
+    color: #fefae0;
+    width: 83%;
+}
+
+#dropdwn2:hover .dropbtn2 a{
+    height: 4.8vh;
+    width: 9.8vw;
+    background-color: #fefae0;
+    color: #3C5A14;
+}
+#dropdwn2:hover .drop-content2 {
+    display: block;
+    transform: translate(0, -2.4vh);
+}
+
+.drop-content3 a:hover {
+    background-color: #3C5A14;
+    color: #fefae0;
+    width: 74%;
+}
+
+#dropdwn3:hover .dropbtn3 a{
+    height: 4.8vh;
+    width: 7.6vw;
+    background-color: #fefae0;
+    color: #3C5A14;
+}
+#dropdwn3:hover .drop-content3 {
+    display: block;
+    max-width: 10.3%;
+    transform: translate(0, -2.4vh);     
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.546);
+    width: 100vw;
+    max-height: 15vh;
+    position: relative;
+}
+
+footer p{
+    transform: translate( 1vw, 6vh);
+    font-family: "DM Serif Display", serif;
+}
+
+.icon{
+    background: url(../media/image/sprite.png);
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 76px;
+    transform: translate(170vh, -1vh);
+    display: inline-block;
+}
+
+/*individual sprite positions*/
+#yt{background-position: -108px -108px;}
+#fb{background-position: -234px -108px;}
+#gmail{background-position: -381px -108px;}
+
+body .bijo video{
+    height: 100vh;
+    width: 100%; 
+    margin-top: 2.3vh;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+body .bijo p{
+    position: absolute;
+    background-color: #41521f;
+    font-family: "Rubik Mono One", monospace;
+    color: #fefae0;
+    font-size: 1.5em;
+    width: 30vw;
+    padding: 2vw;
+    left: 5%;
+    bottom: -2.3%;
+}
+
+body .abt{
+    margin: 20vh;
+    width: 80vw;
+}
+body .abt h1{
+    font-family: "Rubik Mono One", monospace;
+    color: #3E5622;
+    font-size: 5em;
+    margin: 2vh;
+    text-shadow: 6px 6px #223012;
+    text-align: left;
+}
+
+body .abt p{
+    text-align: left;
+    margin-bottom: 3vh;
+    font-family: "Candal", sans-serif;
+    font-size: 2.5em;
+    color: #3E5622;
+}
+
+body .abt button{
+    font-size: 2em;
+    padding: 2vh;
+    margin: 1vh;
+    border: none;
+    outline: none;
+    background-color: #2D661B;
+}
+
+body .abt .other{
+    transform: translate(10vh);
+}
+body .abt button a{
+    text-decoration: none;
+    text-align: left;
+    color: #E8FCC2;
+    padding-right: 3vw;
+    font-family: "DM Serif Display", serif;
+}
+
+body .abt button span{
+    color: #E8FCC2;
+}
+
+body .wwhd{
+    margin: 15vh;
+    max-height: 55vh;
+    transform: translate(0, -15vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body #wwhd{
+    font-family: "Rubik Mono One", monospace;
+    color: #3E5622;
+    font-size: 5em;
+    max-width: 80vw;
+    transform: translate(23vh);
+    text-shadow: 6px 6px #223012;
+    text-align: left;
+}
+body .ach{
+    display: inline-block;
+    margin: 2vw;
+    width: 60vw;
+}
+
+body .ach img{
+    height: 50vh;
+    background-size: cover;
+    margin-bottom: 5vh
+}
+body .ach p{
+    text-align: justify;
+    font-family: "Candal", sans-serif;
+    font-size: 1.3em;
+    color: #3E5622;
+}
+
+body .init video{
+    height: 96vh;
+    width: 100%; 
+    margin-top: 2.3vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+} 
+
+body #init{
+    font-family: "Rubik Mono One", monospace;
+    color: #D1CAA1;
+    font-size: 5em;
+    margin: 2vh;
+    text-shadow: 6px 6px #223012;
+    text-align: left;
+    transform: translate(5vw, 15vh);
+}
+
+body .init .i1, .i2 {
+    display: inline-block;
+    font-family: "Candal", sans-serif;
+    max-width: 35vw;
+    height: 250px;
+    text-align: justify;
+    color: #3E5622;
+    font-size: 1.9em;
+    padding: 5vh;
+    margin: 30px;
+    background-image: linear-gradient(270deg,#DDE5B6, #E8FCC2);
+    box-shadow: 1px 1px 40px 2px rgba(0,0,0,0.2);
+}
+
+body .init .i1{
+    animation: updawn 5s infinite;
+}
+
+body .init .i2{
+    animation: downap 5s infinite;
+}
+
+@keyframes updawn {
+    0%{transform: translate(5vw, 10vh);}
+    50%{transform: translate(5vw, 20vh);}
+    100%{transform: translate(5vw, 10vh);}
+}
+
+@keyframes downap {
+    0%{transform: translate(5vw, 20vh);}
+    50%{transform: translate(5vw, 15vh);}
+    100%{transform: translate(5vw, 20vh);}
+}
+
+body #inv{
+    font-family: "Rubik Mono One", monospace;
+    color: #3E5622;
+    font-size: 5em;
+    margin: 2vh;
+    text-shadow: 6px 6px #223012;
+    text-align: left;
+    transform: translate(5vw, 50vh);
+}
+body #aap, #aach{
+    font-family: "Rubik Mono One", monospace;
+    color: #3E5622;
+    font-size: 5em;
+    margin: 2vh;
+    text-shadow: 6px 6px #223012;
+    text-align: left;
+    transform: translate(5vw, 50vh);
+}
+
+body .invol, .aap{
+    margin: 10vh;
+    display: flex;
+    max-width: 60vh;
+    transform: translateY(40vh);
+}
+
+body .inv, .act{
+    display: inline-block;
+    margin: 2vw;
+}
+
+body .inv img, .act img{
+    height: 40vh;
+    margin-bottom: 5vh;
+    opacity: .5;
+    transition: 0.2s;
+    border: 10px outset#718355;
+}
+
+body .inv img:hover, .act img:hover{
+    opacity: 1;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+body .inv p, .act p{
+    text-align: justify;
+    font-family: "Candal", sans-serif;
+    font-size: 1.3em;
+    max-width: 40vw;
+    color: #3E5622;
+}
